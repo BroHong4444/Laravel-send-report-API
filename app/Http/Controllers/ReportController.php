@@ -6,11 +6,10 @@ use App\Notifications\TelegramNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
-use NotificationChannels\Telegram\TelegramMessage;
 
 class ReportController extends Controller
 {
-    public function sendToTelegram(Request $request)
+    public function index(Request $request)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
