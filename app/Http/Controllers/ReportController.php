@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Notification;
 
 class ReportController extends Controller
 {
-    public function index(Request $request)
+    public function sendTelegram(Request $request)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',

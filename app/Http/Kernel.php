@@ -4,10 +4,6 @@ use Symfony\Component\HttpKernel\HttpKernel;
 
 class Kernel extends HttpKernel
 {
-    protected $middleware = [
-        \Fruitcake\Cors\HandleCors::class,
-    ];
-
     protected $middlewareGroups = [
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
